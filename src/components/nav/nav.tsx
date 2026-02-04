@@ -4,6 +4,7 @@ import Link from "next/link";
 import {Moon, ShoppingCart, Sun} from "lucide-react";
 import {useState} from "react";
 import {useUIStore} from "@/stores/ui-store";
+import NotificationDot from "@/components/feature/notification_dot";
 
 
 export default function Nav() {
@@ -45,7 +46,8 @@ export default function Nav() {
             { isDark ? <Moon/> : <Sun/>}
           </Button>
           <span className="h-6 w-px bg-border " aria-hidden="true"/>
-          <Button variant="ghost" size="icon" className="ml-2" onClick={toggleCart}>
+          <Button variant="ghost" size="icon" className="relative ml-2" onClick={toggleCart}>
+            <NotificationDot count={1}/>
             <ShoppingCart/>
           </Button>
         </div>
