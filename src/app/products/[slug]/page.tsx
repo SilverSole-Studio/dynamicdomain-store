@@ -6,7 +6,7 @@ import {Input} from "@/components/ui/input";
 import {useState} from "react";
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/components/ui/accordion";
 import CartBody from "@/components/feature/cart_body";
-import MainBodyShell from "@/components/feature/main_body_shell";
+import {MainBodyShell} from "@/components/feature/main_body_shell";
 
 export default function ProductPage() {
   const params = useParams<{ slug: string }>();

@@ -1,3 +1,4 @@
+"use client"
 import {useUIStore} from "@/stores/ui-store";
 import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
@@ -8,8 +9,8 @@ export default function CartBody() {
   const comingSoon = () => {};
   return (
     <div
-      className={`h-full overflow-hidden transition-[width,transform] duration-300 ease-out ${
-        sidebarOpen ? "w-full sm:w-75 translate-x-0" : "w-0 translate-x-3"
+      className={`h-[85dvh] overflow-hidden transition-[width,transform] duration-300 ease-out ${
+        sidebarOpen ? "w-dvw md:w-75 translate-x-0 md:ml-4" : "w-0 translate-x-3" 
       }`}
     >
       <div className="w-full h-full bg-background rounded-xl border flex flex-col min-h-0">
